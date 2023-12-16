@@ -1,0 +1,1 @@
+NEYMİŞ BU YA
