@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AnaSayfa.master.cs" Inherits="Sinema_Bilgi_Sistemi.AnaSayfa" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <style>
+        /* Navbar stilleri */
+        nav {
+            background-color: #3498db;
+            padding: 10px;
+            text-align: center;
+        }
+
+            nav a {
+                margin-right: 10px;
+                text-decoration: none;
+                color: #fff;
+            }
+
+        /* Mavi tablo stilleri */
+        .mavi-tablo {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        /* Görsel stilleri */
+        .auto-style3 {
+            width: 348px;
+            height: 287px;
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <!-- Navbar -->
+            <nav>
+                <a href="AnaSayfa.aspx">Ana Sayfa</a>
+                <a href="BiletAl.aspx">Bilet Al</a>
+                <a href="IcecekAl.aspx">İçecek Al</a>
+                <a href="AperatifOgun.aspx">Aperatif Öğün</a>
+                <a href="Logout.aspx?redirect=Default.aspx" style="margin-left: 10px; text-decoration: none; color: #fff;">Logout</a>
+            </nav>
+
+
+
+            <!-- Mavi Tablo -->
+            <div class="mavi-tablo">
+                <!-- İçerik Ekleyin -->
+                <h2>Hoş Geldiniz!</h2>
+                <p>
+                    ReCinema, sinema deneyimini baştan aşağı yeniden tanımlayan öncü bir şirkettir. 
+                </p>
+                <p>
+                    Temiz, çağdaş ve konforlu sinema salonları ile müşterilerine unutulmaz anlar yaşatmayı hedefler. 
+                </p>
+                <p>Şirketimiz, sektördeki en son teknolojiye sahip projeksiyon sistemleri ve ses düzenleri kullanarak, seyircilere en üst düzey görüntü ve ses kalitesini sunar.</p>
+            </div>
+            <!-- İçerik -->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <!-- Görsel -->
+            <img alt="" class="auto-style3" longdesc="https://localhost:44392/AnaSayfa.Master" src="assets/ReCinema-1.png" />
+        </div>
+    </form>
+</body>
+</html>
